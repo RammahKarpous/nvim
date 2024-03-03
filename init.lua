@@ -20,7 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
-require("lazy").setup("rammah/plugins-setup")
+require("lazy").setup("plugins")
 
 local builtin = require("telescope.builtin")
 
@@ -36,6 +36,3 @@ config.setup({
     highlight = { enable = true },
     indent = { enable = true }
 })
-
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
